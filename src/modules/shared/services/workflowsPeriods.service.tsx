@@ -68,7 +68,7 @@ export default class WorkflowPeriodService {
                 return wfp.periods.length>0;
             });
             this.workflowPeriods.forEach(wfp=>{
-                wfp.periods = wfp.periods.sort((a,b)=>a.name>b.name?-1:1);
+                wfp.periods = wfp.periods.sort((a,b)=>a.id>b.id?-1:1);
             })
             return this.workflowPeriods;
         });
